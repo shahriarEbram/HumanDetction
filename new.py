@@ -15,8 +15,8 @@ detected_path = "F:\HD\yolov8-streamlit-detection-tracking-master\detected"
 last_saved_time = datetime.now() - timedelta(seconds=5)
 
 
-def play_sound(sound_file):
-    playsound(sound_file)
+# def play_sound(sound_file):
+#     playsound(sound_file)
 
 
 def save_detected_image(detected_path, res_plotted):
@@ -56,9 +56,9 @@ def _display_detected_frames(conf, model, st_frame, image):
     # Check if a person is detected
     if res[0].boxes:
         save_detected_image(detected_path, res_plotted)
-        if alert:
-            play_sound_thread = Thread(target=play_sound, args=('alarm.mp3',))
-            play_sound_thread.start()
+        # if alert:
+        #     play_sound_thread = Thread(target=play_sound, args=('alarm.mp3',))
+        #     play_sound_thread.start()
 
     st_frame.image(res_plotted, caption='Detected Video', channels="BGR", use_column_width=True)
 
@@ -114,7 +114,7 @@ except Exception as ex:
 #     "time to save images", 3, 15, 5)) / 100
 #
 
-alert = st.sidebar.checkbox("⚠️ Alert")
+# alert = st.sidebar.checkbox("⚠️ Alert")
 
 detection = st.sidebar.button("Open Images", type="primary")
 
