@@ -16,7 +16,6 @@ Pillow==10.3.0
 playsound==1.3.0
 protobuf==5.27.2
 pyOpenSSL==24.1.0
-pyOpenSSL==24.1.0
 redis==5.0.7
 rtl==0.4.3
 Sphinx==7.3.7
