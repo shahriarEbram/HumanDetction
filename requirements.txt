@@ -9,7 +9,6 @@ HTMLParser==0.0.2
 importlib_metadata==8.0.0
 ipython==8.12.3
 ipywidgets==8.1.3
-jnius==1.1.0
 keyring==25.2.1
 opencv_python==4.10.0.84
 opencv_python_headless==4.10.0.84
